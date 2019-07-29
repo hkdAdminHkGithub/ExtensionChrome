@@ -15,7 +15,7 @@ function onWindowGetData() {
   var results = document.querySelector('#results');
 
   chrome.tabs.executeScript(null, {
-    code: `var text = '${text}'`
+    code: `var text = 'text'`
   }, function() {
     chrome.tabs.executeScript(null, {
       file: 'getPagesSource.js'
